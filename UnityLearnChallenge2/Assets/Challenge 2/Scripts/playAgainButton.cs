@@ -10,6 +10,7 @@ public class playAgainButton : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1.0f;
         DetectCollisionsX.point = 0;
+        DestroyOutOfBoundsX.missedBall = 0;
     }
 
 }

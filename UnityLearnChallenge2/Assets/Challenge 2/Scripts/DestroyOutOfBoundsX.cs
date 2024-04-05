@@ -6,7 +6,7 @@ public class DestroyOutOfBoundsX : MonoBehaviour
 {
     private float leftLimit = -40f;
     private float bottomLimit = -5f;
-    public static int missedPoint;
+    public static int missedBall=0;
 
    
     void Update()
@@ -19,7 +19,7 @@ public class DestroyOutOfBoundsX : MonoBehaviour
         // Destroy balls if y position is less than bottomLimit
         else if (transform.position.y < bottomLimit)
         {
-            missedPoint++;
+            missedBall++;
             Destroy(gameObject);
         }
 
