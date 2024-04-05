@@ -6,8 +6,8 @@ public class PlayerControllerX : MonoBehaviour
 {
     public GameObject dogPrefab;
     private bool coolDown=false;
-    public float coolDownDelay = 1.5f;
-    public float coolDownTInterval = 2.0f;
+    public static float coolDownDelay = 1.5f;
+    public static float coolDownTInterval = 2.0f;
 
     // Update is called once per frame
     void Update()

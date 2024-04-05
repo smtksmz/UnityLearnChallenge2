@@ -6,8 +6,9 @@ public class DestroyOutOfBoundsX : MonoBehaviour
 {
     private float leftLimit = -40f;
     private float bottomLimit = -5f;
+    public static int missedPoint;
 
-    // Update is called once per frame
+   
     void Update()
     {
         // Destroy dogs if x position less than left limit
@@ -18,6 +19,7 @@ public class DestroyOutOfBoundsX : MonoBehaviour
         // Destroy balls if y position is less than bottomLimit
         else if (transform.position.y < bottomLimit)
         {
+            missedPoint++;
             Destroy(gameObject);
         }
 
